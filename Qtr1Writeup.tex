@@ -75,27 +75,27 @@ We first started by removing redundant values, such as OPS. The OPS attribute is
 We used WEKA's $\textbf{WrapperSubsetEval}$ technique with search method $\textbf{BestFit}$ to perform further dimensionality reduction. As shown in the screenshot below, the attibutes that were kept were $\textbf{p\_home\_run}$ (number of home runs given up), $\textbf{p\_strikeout}$ (number of strikeouts), $\textbf{p\_walk}$ (number of walks), $\textbf{batting\_avg}$ (batting average of opposing batters), $\textbf{slg\_percent}$ (slugging percent of opposing batters), and $\textbf{p\_era}$ (earned run average). 
 
 \begin{figure}[h!]
-    \includegraphics[scale=0.55]{DimRed.png}
+    \includegraphics[scale=0.55]{CorrelationAttributeEval.png}
     \caption{WEKA screenshot showing Dimensionality Reduction results}
-    \label{fig:DimRed}
+    \label{fig:CorrelationAttributeEval}
 \end{figure}
 
 \section{Splitting into Testing and Training}
-After reducing dimensionality to these 7 attributes, we used WEKA to split our data into training and testing sets. We used WEKA's supervised method $\textbf{Resample}$, with sample size percent of 33\% and $\textbf{noReplacement}$ set to $\textbf{True}$. We ran it twice, once with $\textbf{invertSelection}$ set to $\textbf{False}$ to obtain our testing set. 
+after reducing dimensionality to these 7 attributes, we used weka to split our data into training and testing sets. we used weka's supervised method $\textbf{resample}$, with sample size percent of 33\% and $\textbf{noreplacement}$ set to $\textbf{true}$. we ran it twice, once with $\textbf{invertselection}$ set to $\textbf{false}$ to obtain our testing set. 
 The second time, we ran it with $\textbf{invertSelection}$ set to $\textbf{True}$ to obtain our training set. 
 
-\newpage
-\begin{figure}[h!]
-    \includegraphics[scale=0.6]{TestSet.png}
-    \caption{WEKA Screenshot showing the Testing Set}
-    \label{fig:TestSet}
-\end{figure}
-\newpage
-\begin{figure}[h!]
-    \includegraphics[scale=0.6]{TrainSet.png}
-    \caption{WEKA Screenshot showing the Training Set}
-    \label{fig:TrainSet}
-\end{figure}
+% \newpage
+% \begin{figure}[h!]
+    % \includegraphics[scale=0.6]{TestSet.png}
+    % \caption{WEKA Screenshot showing the Testing Set}
+    % \label{fig:TestSet}
+% \end{figure}
+% \newpage
+% \begin{figure}[h!]
+    % \includegraphics[scale=0.6]{TrainSet.png}
+    % \caption{WEKA Screenshot showing the Training Set}
+    % \label{fig:TrainSet}
+% \end{figure}
 
 The class distribution of the testing and training sets can be seen in Figures 2 and 3. As seen by the class distributions, the WEKA $\textbf{Resample}$ method has maintained the non-uniform class distribution in the training and testing sets. This means that the 
 
