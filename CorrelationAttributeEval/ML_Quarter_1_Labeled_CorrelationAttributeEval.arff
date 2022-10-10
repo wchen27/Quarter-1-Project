@@ -1,6 +1,6 @@
 @relation ML_Quarter_1_Labeled_CorrelationAttributeEval
 
-@attribute ﻿p_game numeric
+@attribute p_game numeric
 @attribute p_k_percent numeric
 @attribute batting_avg numeric
 @attribute slg_percent numeric
