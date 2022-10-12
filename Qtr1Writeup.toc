@@ -1,0 +1,60 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Overview \& Rationale}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Data Set Information}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Preprocessing}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Missing and Redundant Values}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Class Labels}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Dimensionality Reduction}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Self Selection}{6}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}WrapperSubsetEval}{7}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}InfoGainAttributeEval}{8}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}GainRatioAttributeEval}{9}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}CorrelationAttributeEval}{10}{subsubsection.2.3.5}%
+\contentsline {section}{\numberline {3}Splitting into Testing and Training}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}SelfSelection}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}WrapperSubsetEval}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}InfoGainAttributeEval}{13}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}GainRatioAttributeEval}{14}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}CorrelationAttributeEval}{15}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Classification}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Types of Classification Methods}{16}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}J48}{16}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}LogisticFunction}{16}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}NaiveBayes}{16}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}OneR}{17}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}Methods}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}SelfSelected}{17}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}J48 - SelfSelected}{17}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}LogisticFunction - SelfSelected}{18}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}NaiveBayes - SelfSelected}{20}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}OneR - SelfSelected}{22}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Analysis}{24}{subsubsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.4}WrapperSubsetEval}{25}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}J48 - WrapperSubsetEval}{25}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}LogisticFunction - WrapperSubsetEval}{26}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}NaiveBayes - WrapperSubsetEval}{28}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}OneR - WrapperSubsetEval}{30}{subsubsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Analysis}{32}{subsubsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.5}InfoGainAttributeEval}{33}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}J48 - InfoGainAttributeEval}{33}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}LogisticFunction - InfoGainAttributeEval}{35}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}NaiveBayes - InfoGainAttributeEval}{37}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}OneR - InfoGainAttributeEval}{39}{subsubsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.5}Analysis}{41}{subsubsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.6}GainRatioAttributeEval}{42}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}J48 - GainRatioAttributeEval}{42}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}LogisticFunction - GainRatioAttributeEval}{44}{subsubsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.3}NaiveBayes - GainRatioAttributeEval}{46}{subsubsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.4}OneR - GainRatioAttributeEval}{48}{subsubsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.5}Analysis}{50}{subsubsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.7}InfoGainAttributeEval}{51}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}J48 - InfoGainAttributeEval}{51}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}LogisticFunction - InfoGainAttributeEval}{53}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}Analysis}{55}{subsubsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.4}NaiveBayes - CorrelationAttributeEval}{56}{subsubsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.5}OneR - CorrelationAttributeEval}{58}{subsubsection.4.7.5}%
+\contentsline {subsubsection}{\numberline {4.7.6}Analysis}{60}{subsubsection.4.7.6}%
+\contentsline {section}{\numberline {5}Conclusion}{60}{section.5}%
+\contentsline {section}{\numberline {6}Discussion}{60}{section.6}%
+\contentsline {section}{\numberline {7}Sources}{61}{section.7}%
+\contentsline {section}{\numberline {8}Bibliography}{62}{section.8}%
