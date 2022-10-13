@@ -114,7 +114,7 @@ $\textbf{GainRatioAttributeEval}$ is the third WEKA built-in attribute selection
 
 \newpage
 \subsubsection{CorrelationAttributeEval}
-$\textbf{CorrelationAttributeEval}$ is the final WEKA built-in attribute selection method we used. This method measures the Perason\textquotesingle s correlation between an attribute and the class variable. The Pearson\textquotesingle s correlation measures the strength of a linear relationship between two variables, and can range from $-1$ to $1$. 
+$\textbf{CorrelationAttributeEval}$ is the final WEKA built-in attribute selection method we used. This method measures the Pearson\textquotesingle s correlation between an attribute and the class variable. The Pearson\textquotesingle s correlation measures the strength of a linear relationship between two variables, and can range from $-1$ to $1$. 
 \begin{figure}[h!]
     \includegraphics[scale=0.4]{./images/CorrelationAttributeEval/CorrelationAttributeEval.png}
     \centering
@@ -123,7 +123,7 @@ $\textbf{CorrelationAttributeEval}$ is the final WEKA built-in attribute selecti
 \end{figure}
 
 \section{Splitting into Testing and Training}
-For each one of these attribute selection methods, we removed all attributes except the ones selected and the class varaible. We then split the instances into a testing set and a training set using WEKA. For this, we used WEKA\textquotesingle s supervised filter $\textbf{Resample}$, which we configured to produce a random subset of the dataset without replacement. We ran it once, with the size of the output dataset to be 33\% of the whole to get the testing sets, then used the $\textbf{InvertSelection}$ feature to get the training sets. The training sets had $368$ instances, with $226$ classified as $\textbf{yes}$ and $142$ classified as $\textbf{no}$, while the testing sets had $179$ instances, with $110$ classified as $\textbf{yes}$ and $69$ classified as $\textbf{no}$.
+For each one of these attribute selection methods, we removed all attributes except the ones selected and the class variable. We then split the instances into a testing set and a training set using WEKA. For this, we used WEKA\textquotesingle s supervised filter $\textbf{Resample}$, which we configured to produce a random subset of the dataset without replacement. We ran it once, with the size of the output dataset to be 33\% of the whole to get the testing sets, then used the $\textbf{InvertSelection}$ feature to get the training sets. The training sets had $368$ instances, with $226$ classified as $\textbf{yes}$ and $142$ classified as $\textbf{no}$, while the testing sets had $179$ instances, with $110$ classified as $\textbf{yes}$ and $69$ classified as $\textbf{no}$.
 
 \newpage
 \subsection{SelfSelection}
