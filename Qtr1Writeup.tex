@@ -114,7 +114,7 @@ $\textbf{GainRatioAttributeEval}$ is the third WEKA built-in attribute selection
 
 \newpage
 \subsubsection{CorrelationAttributeEval}
-$\textbf{CorrelationAttributeEval}$ is the final WEKA built-in attribute selection method we used. This method measures the Perason\textquotesingle s correlation between an attribute and the class variable. The Perason\textquotesingle s correlation measures the strength of a linear relationship between two varaibles, and can range from $-1$ to $1$. 
+$\textbf{CorrelationAttributeEval}$ is the final WEKA built-in attribute selection method we used. This method measures the Perason\textquotesingle s correlation between an attribute and the class variable. The Pearson\textquotesingle s correlation measures the strength of a linear relationship between two variables, and can range from $-1$ to $1$. 
 \begin{figure}[h!]
     \includegraphics[scale=0.4]{./images/CorrelationAttributeEval/CorrelationAttributeEval.png}
     \centering
@@ -213,13 +213,13 @@ We compared each of these methods to determine which one worked the best for eac
 
 \subsection{Types of Classification Methods}
 \subsubsection{J48}
-$\textbf{J48}$ classification is WEKA\textquotesingle s implementation of the C4.5 algorithm, where the J stands for Java. It builds a decision tree based on imformation gain. At each node of the decision tree, it splits the attriutes into subsets, with the split being decided by the difference in entropy. $\textbf{J48}$ is seen as an improvement over the C4.5 algorithm becuase it accounts for missing values, allows for pruning, continuous value ranges, and many other extra features. 
+$\textbf{J48}$ classification is WEKA\textquotesingle s implementation of the C4.5 algorithm, where the J stands for Java. It builds a decision tree based on information gain. At each node of the decision tree, it splits the attributes into subsets, with the split being decided by the difference in entropy. $\textbf{J48}$ is seen as an improvement over the C4.5 algorithm because it accounts for missing values, allows for pruning, continuous value ranges, and many other extra features. 
 
 \subsubsection{LogisticFunction}
-$\textbf{LogisticFunction}$ is most commonly used when the class variable is binary, which, in our case, it is. It uses the sigmoid function, $$S(x) = \frac{1}{1 + e^{-x}}.$$ Initial weights are modified using the error, and the coefficients are imrpoved through each instance in the test set. We then can use these coefficients to make predictions. A decision boundary is set, like $ y = 0.5$, and everything above the decision boundary is rounded to a decision of $1$ and everything below the decision boundary is rounded to a decision of $0$. These decisions are mapped to the class variable. 
+$\textbf{LogisticFunction}$ is most commonly used when the class variable is binary, which, in our case, it is. It uses the sigmoid function, $$S(x) = \frac{1}{1 + e^{-x}}.$$ Initial weights are modified using the error, and the coefficients are improved through each instance in the test set. We then can use these coefficients to make predictions. A decision boundary is set, like $ y = 0.5$, and everything above the decision boundary is rounded to a decision of $1$ and everything below the decision boundary is rounded to a decision of $0$. These decisions are mapped to the class variable. 
 
 \subsubsection{NaiveBayes}
-$\textbf{NaiveBayes}$ is based on Bayes\textquotesingle  theorem, or $$\textbf{P}(A|B) = \frac{\textbf{P}(B|A)\textbf{P}(A)}{\textbf{P}(B)}.$$ It assumes that each attribute is independent from the rest, making the train time much faster. This makes it a good baseline to compare other classification methods to. It repeatedly applies Bayes\textquotesingle  theorem with these naive assumptions. 
+$\textbf{NaiveBayes}$ is based on Bayes\textquotesingle  theorem, or $$\textbf{P}(A|B) = \frac{\textbf{P}(B|A)\textbf{P}(A)}{\textbf{P}(B)}.$$ It assumes that each attribute is independent of the rest, making the train time much faster. This makes it a good baseline to compare other classification methods to. It repeatedly applies Bayes\textquotesingle  theorem with these naive assumptions. 
 
 \subsubsection{OneR}
 $\textbf{OneR}$, also known as $\textbf{One Class}$ classification, looks at just one attribute to make a prediction about the instance. It uses the training set to determine which attribute is the best predictor of the class variable, determined with accuracy. It is an extremely lightweight classification algorithm, sacrificing overall accuracy for speed. Like $\textbf{NaiveBayes}$, it can provide a baseline for other predictors. 
@@ -398,7 +398,7 @@ We see that $\textbf{LogisticFunction}$ performed best here, but $\textbf{J48}$ 
 
 \newpage
 \subsubsection{Analysis}
-$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close scond. Once again, $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. 
+$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close second. Once again, $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. 
 
 
 \newpage
@@ -461,7 +461,7 @@ $\textbf{J48}$ performed the best with this attribute selection method, with $\t
 
 \newpage
 \subsubsection{Analysis}
-$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close scond. Much like in previous cases, $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. 
+$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close second. Much like in previous cases, $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. 
 
 \newpage
 \subsection{InfoGainAttributeEval}
@@ -495,7 +495,7 @@ $\textbf{J48}$ performed the best with this attribute selection method, with $\t
 
 \newpage
 \subsubsection{Analysis}
-$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close scond. $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. 
+$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close second. $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. 
 
 \newpage
 \subsubsection{NaiveBayes - CorrelationAttributeEval}
@@ -527,7 +527,7 @@ $\textbf{J48}$ performed the best with this attribute selection method, with $\t
 
 \newpage
 \subsubsection{Analysis}
-$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close scond. $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. This time, $\textbf{LogisticFunction}$ performed a bit worse than normal compared to $\textbf{J48}$. 
+$\textbf{J48}$ performed the best with this attribute selection method, with $\textbf{LogisticFunction}$ being a close second. $\textbf{J48}$ was a lot better at categorizing true positives while $\textbf{LogisticFunction}$ was a lot better at categorizing true negatives. This time, $\textbf{LogisticFunction}$ performed a bit worse than normal compared to $\textbf{J48}$. 
 
 \section{Conclusion}
 Looking at the data given to us by WEKA, we can see that the best combination of attribute selection and classification method is $\textbf{WrapperSubsetEval}$ and $\textbf{LogisticFunction}$. This method classified with an accuracy of $67.0391\%$. However, with just one more instance misclassified, $\textbf{WraperSubsetEval}$ and $\textbf{J48}$ was a close second. Overall, the best performing models used the $\textbf{WrapperSubsetEval}$ attribute selection method. This is probably due to the fact that it is one of the more complex attribute selection methods, and therefore is more accurate. 
@@ -538,7 +538,7 @@ Overall, the accuracy of the classifier models was low, with the highest at just
 
 
 \section{Discussion}
-Throughout the course of this project, we learned a lot about data preprocessing and classification. We learned that well-chosen attributes are essential to having an accurate model, as evidenced by the fact that the attributes that we selected becuase we thought were the most predictive of pitcher performance were actually not the best attributes, and that greatly decreased the accuracy of any classifier algorithm, and even was the worst performing attribute selection method based on the results of the classification methods. This is a classic case of garbage in, garbage out. 
+Throughout the course of this project, we learned a lot about data preprocessing and classification. We learned that well-chosen attributes are essential to having an accurate model, as evidenced by the fact that the attributes that we selected because we thought were the most predictive of pitcher performance were actually not the best attributes, and that greatly decreased the accuracy of any classifier algorithm, and even was the worst performing attribute selection method based on the results of the classification methods. This is a classic case of garbage in, garbage out. 
 
 We also learned that sometimes you cannot just compare the accuracy to determine which of two models is better. There needs to be some sort of justification. In our case, the difference between $\textbf{LogisticFunction}$ and $\textbf{J48}$ for the $\textbf{WrapperSubsetEval}$ was almost negligible, but several factors pushed us to determine that $\textbf{LogisticFunction}$ was better. 
 
@@ -552,6 +552,8 @@ We got our data from \url{https://www.baseballsavant.mlb.com} and used WEKA to p
 Datasets for this project can be found at \url{https://drive.google.com/drive/folders/1sgNZJn71GUput_BZugSGtm8ybw6_6p0P?usp=sharing}. This link includes both the original datasets as well as the modified datasets. 
 
 Research on models was done on both the official WEKA sourceforge site and through \url{https://www.medium.com}. The links to sources used, as well as the original dataset, are in the Bibliography on the next page. 
+
+WEKA (Waikato Environment for Knowledge Analysis), is a collection of machine learning and data mining algorithms and tasks. It was developed at the University of Waikato, New Zealand. 
 
 \newpage
 \section{Bibliography}
